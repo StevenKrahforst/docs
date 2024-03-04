@@ -1,0 +1,93 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "BetterBeatSaber.Server",
+      "version": "1.0"
+    },
+    "paths": {
+      "/download": {
+        "get": {
+          "tags": [
+            "Download"
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/players/{id}": {
+        "get": {
+          "tags": [
+            "Player"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "style": "simple",
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Player"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Player"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Player"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/server": {
+        "get": {
+          "tags": [
+            "Server"
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Player": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "name": {
+              "maxLength": 64,
+              "type": "string",
+              "nullable": true
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
