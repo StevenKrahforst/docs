@@ -69,17 +69,447 @@
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Achievements",
       "pages": [
-        "api-reference/introduction"
+        "beatleader\\achievements\\put-achievement",
+        "beatleader\\achievements\\put-achievement-level",
+        "beatleader\\achievements\\get-achievements",
+        "beatleader\\achievements\\get-player-achievements",
+        "beatleader\\achievements\\post-player-achievement",
+        "beatleader\\achievements\\post-surveyfilled",
+        "beatleader\\achievements\\get-surveyachievement"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Authentication",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "beatleader\\authentication\\get-signin",
+        "beatleader\\authentication\\post-signin",
+        "beatleader\\authentication\\post-signinapprove",
+        "beatleader\\authentication\\post-signinmigrate",
+        "beatleader\\authentication\\get-steamcallback",
+        "beatleader\\authentication\\post-signinmigrateoculuspc",
+        "beatleader\\authentication\\post-signinoculus",
+        "beatleader\\authentication\\post-signinoculusoculuspc",
+        "beatleader\\authentication\\get-oauthclientinfo",
+        "beatleader\\authentication\\get-oauthclientantiforgery",
+        "beatleader\\authentication\\get-oauth2authorize",
+        "beatleader\\authentication\\post-oauth2authorize",
+        "beatleader\\authentication\\get-oauth2identity",
+        "beatleader\\authentication\\get-signout",
+        "beatleader\\authentication\\post-signout"
+      ]
+    },
+    {
+      "group": "Backup",
+      "pages": [
+        "beatleader\\backup\\get-backupfile-"
+      ]
+    },
+    {
+      "group": "Badge",
+      "pages": [
+        "beatleader\\badge\\put-badge",
+        "beatleader\\badge\\put-badge-1",
+        "beatleader\\badge\\put-playerbadge-"
+      ]
+    },
+    {
+      "group": "BeatSaver",
+      "pages": [
+        "beatleader\\beatsaver\\get-userlinkbeatsaverandapprove",
+        "beatleader\\beatsaver\\get-userapprovequalification",
+        "beatleader\\beatsaver\\get-userlinkbeatsaver"
+      ]
+    },
+    {
+      "group": "Clan",
+      "pages": [
+        "beatleader\\clan\\get-clans",
+        "beatleader\\clan\\get-clan",
+        "beatleader\\clan\\get-clanid",
+        "beatleader\\clan\\get-clan-maps",
+        "beatleader\\clan\\get-clanid-maps",
+        "beatleader\\clan\\get-clansglobalmap",
+        "beatleader\\clan\\get-clansrefreshglobalmap",
+        "beatleader\\clan\\post-clansimportlocations"
+      ]
+    },
+    {
+      "group": "ClanManagement",
+      "pages": [
+        "beatleader\\clanmanagement\\post-clancreate",
+        "beatleader\\clanmanagement\\put-clan",
+        "beatleader\\clanmanagement\\delete-clan",
+        "beatleader\\clanmanagement\\post-clanmanager",
+        "beatleader\\clanmanagement\\put-clanrichbio",
+        "beatleader\\clanmanagement\\put-clandiscordinvite",
+        "beatleader\\clanmanagement\\post-claninvite",
+        "beatleader\\clanmanagement\\post-clancancelinvite",
+        "beatleader\\clanmanagement\\post-clankickplayer",
+        "beatleader\\clanmanagement\\post-clanaccept",
+        "beatleader\\clanmanagement\\post-clanreject",
+        "beatleader\\clanmanagement\\post-clanunban",
+        "beatleader\\clanmanagement\\post-clanleave",
+        "beatleader\\clanmanagement\\put-clanplaylist",
+        "beatleader\\clanmanagement\\delete-clanplaylist"
+      ]
+    },
+    {
+      "group": "CurrentUser",
+      "pages": [
+        "beatleader\\currentuser\\get-userid",
+        "beatleader\\currentuser\\get-user",
+        "beatleader\\currentuser\\patch-user",
+        "beatleader\\currentuser\\get-usermodinterface",
+        "beatleader\\currentuser\\get-oculususer",
+        "beatleader\\currentuser\\post-oculususer",
+        "beatleader\\currentuser\\post-userfriend",
+        "beatleader\\currentuser\\delete-userfriend",
+        "beatleader\\currentuser\\delete-usercover",
+        "beatleader\\currentuser\\patch-usercover",
+        "beatleader\\currentuser\\patch-userchangepassword",
+        "beatleader\\currentuser\\patch-userresetpassword",
+        "beatleader\\currentuser\\patch-userchangelogin",
+        "beatleader\\currentuser\\post-usermigrate",
+        "beatleader\\currentuser\\get-usermigrateoculuspc",
+        "beatleader\\currentuser\\get-userfailedscores",
+        "beatleader\\currentuser\\post-userfailedscorefalsepositive",
+        "beatleader\\currentuser\\post-userfailedscoreremove",
+        "beatleader\\currentuser\\post-userfailedscoreretry",
+        "beatleader\\currentuser\\get-userconfiglink",
+        "beatleader\\currentuser\\post-userconfig",
+        "beatleader\\currentuser\\post-userban",
+        "beatleader\\currentuser\\post-userunban",
+        "beatleader\\currentuser\\post-userhideopscores"
+      ]
+    },
+    {
+      "group": "Developer",
+      "pages": [
+        "beatleader\\developer\\post-developerapp",
+        "beatleader\\developer\\put-developerapp",
+        "beatleader\\developer\\delete-developerapp",
+        "beatleader\\developer\\get-developerapps",
+        "beatleader\\developer\\post-developerappsecretreset"
+      ]
+    },
+    {
+      "group": "Events",
+      "pages": [
+        "beatleader\\events\\get-event-players",
+        "beatleader\\events\\get-event-refresh",
+        "beatleader\\events\\get-event",
+        "beatleader\\events\\delete-event",
+        "beatleader\\events\\post-eventstart",
+        "beatleader\\events\\get-events"
+      ]
+    },
+    {
+      "group": "Friends",
+      "pages": [
+        "beatleader\\friends\\get-userfriendscores",
+        "beatleader\\friends\\get-userfriendactivity"
+      ]
+    },
+    {
+      "group": "Leaderboard",
+      "pages": [
+        "beatleader\\leaderboard\\get-leaderboard",
+        "beatleader\\leaderboard\\get-leaderboardclanrankings-clan",
+        "beatleader\\leaderboard\\get-leaderboardclanrankings-",
+        "beatleader\\leaderboard\\get-leaderboardclanrankings",
+        "beatleader\\leaderboard\\get-leaderboardshash",
+        "beatleader\\leaderboard\\get-leaderboards",
+        "beatleader\\leaderboard\\get-leaderboardsgroupped",
+        "beatleader\\leaderboard\\get-custommodes",
+        "beatleader\\leaderboard\\get-leaderboardranking",
+        "beatleader\\leaderboard\\post-leaderboardsfeature",
+        "beatleader\\leaderboard\\delete-leaderboardsfeature"
+      ]
+    },
+    {
+      "group": "LeaderboardRefresh",
+      "pages": [
+        "beatleader\\leaderboardrefresh\\get-leaderboardsrefreshallcontexts",
+        "beatleader\\leaderboardrefresh\\get-leaderboardsrefresh"
+      ]
+    },
+    {
+      "group": "MapEvaluation",
+      "pages": [
+        "beatleader\\mapevaluation\\get-criteriacheck"
+      ]
+    },
+    {
+      "group": "MiniRanking",
+      "pages": [
+        "beatleader\\miniranking\\get-minirankings"
+      ]
+    },
+    {
+      "group": "Mod",
+      "pages": [
+        "beatleader\\mod\\get-modlastversions",
+        "beatleader\\mod\\get-servername"
+      ]
+    },
+    {
+      "group": "Modifiers",
+      "pages": [
+        "beatleader\\modifiers\\retrieve-modifiers"
+      ]
+    },
+    {
+      "group": "Patreon",
+      "pages": [
+        "beatleader\\patreon\\refresh-patreon-link"
+      ]
+    },
+    {
+      "group": "Player",
+      "pages": [
+        "beatleader\\player\\get-player-profile",
+        "beatleader\\player\\get-player-with-discord",
+        "beatleader\\player\\get-player-with-beatsaver",
+        "beatleader\\player\\retrieve-a-list-of-players-ranking",
+        "beatleader\\player\\get-events-where-player-participated"
+      ]
+    },
+    {
+      "group": "PlayerContextRefresh",
+      "pages": [
+        "beatleader\\playercontextrefresh\\get-player-refresh",
+        "beatleader\\playercontextrefresh\\get-player-refreshallcontexts",
+        "beatleader\\playercontextrefresh\\get-playersrefreshallcontexts",
+        "beatleader\\playercontextrefresh\\get-playersrefresh",
+        "beatleader\\playercontextrefresh\\get-playersstatsrefreshallcontexts",
+        "beatleader\\playercontextrefresh\\get-playersstatsrefresh",
+        "beatleader\\playercontextrefresh\\get-playersstatsrefreshallcontextsslowly",
+        "beatleader\\playercontextrefresh\\get-playersstatsrefresh-slowly",
+        "beatleader\\playercontextrefresh\\get-playersrankrefresh",
+        "beatleader\\playercontextrefresh\\get-playersrankrefreshallcontexts"
+      ]
+    },
+    {
+      "group": "PlayerContextScores",
+      "pages": [
+        "beatleader\\playercontextscores\\get-player-contextscores"
+      ]
+    },
+    {
+      "group": "PlayerRefresh",
+      "pages": [
+        "beatleader\\playerrefresh\\get-player-refresh",
+        "beatleader\\playerrefresh\\get-playersleaderboard-refresh",
+        "beatleader\\playerrefresh\\get-playersrefresh",
+        "beatleader\\playerrefresh\\get-playersstatsrefresh",
+        "beatleader\\playerrefresh\\get-playersstatsrefreshslowly",
+        "beatleader\\playerrefresh\\get-playersrankrefresh"
+      ]
+    },
+    {
+      "group": "PlayerScores",
+      "pages": [
+        "beatleader\\playerscores\\retrieve-players-scores",
+        "beatleader\\playerscores\\retrieve-players-scores-in-a-compact-form",
+        "beatleader\\playerscores\\retrieve-players-score-for-a-specific-map",
+        "beatleader\\playerscores\\get-player-histogram",
+        "beatleader\\playerscores\\retrieve-players-accuracy-graph",
+        "beatleader\\playerscores\\retrieve-players-statistic-history",
+        "beatleader\\playerscores\\retrieve-players-pinned-scores"
+      ]
+    },
+    {
+      "group": "Playlist",
+      "pages": [
+        "beatleader\\playlist\\get-useroneclickplaylist",
+        "beatleader\\playlist\\post-useroneclickplaylist",
+        "beatleader\\playlist\\get-useroneclickplaylistlink",
+        "beatleader\\playlist\\get-useroneclickdone",
+        "beatleader\\playlist\\get-playlists",
+        "beatleader\\playlist\\get-playlist",
+        "beatleader\\playlist\\get-playlistguid",
+        "beatleader\\playlist\\get-playlist-link",
+        "beatleader\\playlist\\get-playlistimage",
+        "beatleader\\playlist\\get-userplaylists",
+        "beatleader\\playlist\\post-userplaylist",
+        "beatleader\\playlist\\delete-userplaylist",
+        "beatleader\\playlist\\get-playlistrefreshranked",
+        "beatleader\\playlist\\get-playlistrefreshnominated",
+        "beatleader\\playlist\\get-playlistrefreshqualified",
+        "beatleader\\playlist\\get-playlistgenerate",
+        "beatleader\\playlist\\get-playlistscoresgenerate"
+      ]
+    },
+    {
+      "group": "Preview",
+      "pages": [
+        "beatleader\\preview\\get-previewreplay",
+        "beatleader\\preview\\get-previewroyale"
+      ]
+    },
+    {
+      "group": "Rank",
+      "pages": [
+        "beatleader\\rank\\get-votestatus-",
+        "beatleader\\rank\\post-vote-",
+        "beatleader\\rank\\post-votesteam-",
+        "beatleader\\rank\\post-votefeedback",
+        "beatleader\\rank\\post-nominate-",
+        "beatleader\\rank\\post-qualification-",
+        "beatleader\\rank\\post-rank-",
+        "beatleader\\rank\\get-prevqualtime",
+        "beatleader\\rank\\get-grantrtjunior",
+        "beatleader\\rank\\get-removertjunior",
+        "beatleader\\rank\\get-grantrtcore",
+        "beatleader\\rank\\get-removertcore",
+        "beatleader\\rank\\put-qualificationcomment",
+        "beatleader\\rank\\post-qualificationcomment",
+        "beatleader\\rank\\delete-qualificationcomment",
+        "beatleader\\rank\\put-qualificationcriteria",
+        "beatleader\\rank\\post-qualificationcriteria",
+        "beatleader\\rank\\delete-qualificationcriteria",
+        "beatleader\\rank\\post-qualificationvote"
+      ]
+    },
+    {
+      "group": "ReeSabersPresets",
+      "pages": [
+        "beatleader\\reesaberspresets\\get-reepresets",
+        "beatleader\\reesaberspresets\\get-reepreset",
+        "beatleader\\reesaberspresets\\put-reepreset",
+        "beatleader\\reesaberspresets\\delete-reepreset",
+        "beatleader\\reesaberspresets\\post-reepresetcreate",
+        "beatleader\\reesaberspresets\\post-reepresets-reactiontoggle",
+        "beatleader\\reesaberspresets\\get-reepresets-downloadquest",
+        "beatleader\\reesaberspresets\\get-reepresets-downloadpc",
+        "beatleader\\reesaberspresets\\put-presetcomment",
+        "beatleader\\reesaberspresets\\post-presetcomment",
+        "beatleader\\reesaberspresets\\delete-presetcomment"
+      ]
+    },
+    {
+      "group": "Replay",
+      "pages": [
+        "beatleader\\replay\\post-replay",
+        "beatleader\\replay\\put-replayoculus"
+      ]
+    },
+    {
+      "group": "Replayed",
+      "pages": [
+        "beatleader\\replayed\\get-replayed",
+        "beatleader\\replayed\\get-recalculatereplayed"
+      ]
+    },
+    {
+      "group": "Reweight",
+      "pages": [
+        "beatleader\\reweight\\post-reweight-",
+        "beatleader\\reweight\\post-reweightapprove-",
+        "beatleader\\reweight\\post-reweightcancel-"
+      ]
+    },
+    {
+      "group": "Score",
+      "pages": [
+        "beatleader\\score\\get-score",
+        "beatleader\\score\\delete-score",
+        "beatleader\\score\\get-score--",
+        "beatleader\\score\\get-scorerandom",
+        "beatleader\\score\\get-v4scores-",
+        "beatleader\\score\\get-v5scores-",
+        "beatleader\\score\\get-v3scores---",
+        "beatleader\\score\\get-score---1",
+        "beatleader\\score\\get-scorestatistic",
+        "beatleader\\score\\get-scorecalculatestatistic",
+        "beatleader\\score\\put-score-pin",
+        "beatleader\\score\\get-replays",
+        "beatleader\\score\\get-v1clanscores--page",
+        "beatleader\\score\\get-scorestats"
+      ]
+    },
+    {
+      "group": "ScoreRefresh",
+      "pages": [
+        "beatleader\\scorerefresh\\get-scoresrefresh",
+        "beatleader\\scorerefresh\\get-scoresbulkrefresh",
+        "beatleader\\scorerefresh\\get-scoresbulkrefreshallcontexts",
+        "beatleader\\scorerefresh\\get-scores-bulkrefresh",
+        "beatleader\\scorerefresh\\get-scores-bulkrankrefresh",
+        "beatleader\\scorerefresh\\get-scoresbulkrankrefresh"
+      ]
+    },
+    {
+      "group": "Screenshot",
+      "pages": [
+        "beatleader\\screenshot\\get-screenshot-x--",
+        "beatleader\\screenshot\\get-download-",
+        "beatleader\\screenshot\\get-animatedscreenshot-x--"
+      ]
+    },
+    {
+      "group": "Socials",
+      "pages": [
+        "beatleader\\socials\\get-userlinktwitch",
+        "beatleader\\socials\\get-userlinktwitter",
+        "beatleader\\socials\\get-userlinkdiscord",
+        "beatleader\\socials\\get-userlinkgoogle",
+        "beatleader\\socials\\get-userlinkbeatleader",
+        "beatleader\\socials\\post-userunlink"
+      ]
+    },
+    {
+      "group": "Song",
+      "pages": [
+        "beatleader\\song\\get-refreshstatus",
+        "beatleader\\song\\get-maphash",
+        "beatleader\\song\\get-mapmodinterface",
+        "beatleader\\song\\get-mapallstars",
+        "beatleader\\song\\get-mapmigratenominations",
+        "beatleader\\song\\post-mapuploadost"
+      ]
+    },
+    {
+      "group": "SongSuggest",
+      "pages": [
+        "beatleader\\songsuggest\\get-songsuggest",
+        "beatleader\\songsuggest\\get-songsuggestsongs",
+        "beatleader\\songsuggest\\get-songsuggestrefreshtime",
+        "beatleader\\songsuggest\\get-mapscurated",
+        "beatleader\\songsuggest\\get-mapscuratedrefresh",
+        "beatleader\\songsuggest\\get-mapstrending",
+        "beatleader\\songsuggest\\get-mapstrendingrefresh"
+      ]
+    },
+    {
+      "group": "Stats",
+      "pages": [
+        "beatleader\\stats\\get-player-scoresstats",
+        "beatleader\\stats\\get-mapscorestats",
+        "beatleader\\stats\\get-watched"
+      ]
+    },
+    {
+      "group": "Suggestions",
+      "pages": [
+        "beatleader\\suggestions\\get-mytopsimilar"
+      ]
+    },
+    {
+      "group": "Unicode",
+      "pages": [
+        "beatleader\\unicode\\get-unicode"
+      ]
+    },
+    {
+      "group": "Valentine",
+      "pages": [
+        "beatleader\\valentine\\get-mytopviewed",
+        "beatleader\\valentine\\post-sendvalentine",
+        "beatleader\\valentine\\get-valentines",
+        "beatleader\\valentine\\get-valentineviewed"
       ]
     }
   ],
@@ -88,5 +518,5 @@
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   },
-  "openapi": ["/openapi.yml"]
+  "openapi": ["/openapi.json"]
 }
